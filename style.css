@@ -1,0 +1,168 @@
+/* RESETS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+/* CSS */
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("assets/images/bg-mobile.svg");
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+}
+
+main {
+    max-width: 375px;
+    margin: 2rem;
+}
+
+.mockups img{
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.logo img{
+    width: 42%;
+    margin-bottom: 3.5rem;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+p{
+    color: white;
+    font-size: 1.02em;
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+
+.button a{
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border: none;
+    padding: 0.7rem 4.5rem;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    transition: 0.3s;
+}
+
+.button a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.icons{
+    width: 120px;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons i{
+    margin-top: 5rem;
+    border: 1px solid white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.icons i:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+footer{
+    color: white;
+    font-size: 0.7em;
+    margin-top: 1rem;
+}
+
+footer a{
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1100px) {
+    body{
+        background: url("assets/images/bg-desktop.svg");
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: fixed;
+    }
+
+    main{
+        max-width: max-content;
+        margin: 4rem;
+    }
+
+    .logo img{
+        width: 15%;
+    }
+
+    .mockups img{
+        width: 110%;
+    }
+
+    .content{
+        width: max-content;
+        margin-top: 4.5rem;
+        display: flex;
+    }
+
+    .text{
+        margin-left: 7rem;
+        margin-top: 3rem;
+        text-align: start;
+        max-width: 450px;
+    }
+
+    h1{
+        font-size: 2em;
+        max-width: 400px;
+    }
+
+    p{
+        font-size: 0.99em;
+    }
+
+    .icons i{
+        margin-top: 0;
+    }
+
+    .icons{
+        margin: 0;
+    }
+
+    .icons-box{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
